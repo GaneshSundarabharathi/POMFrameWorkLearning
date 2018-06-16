@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pages.CreateLeadPage;
+import pages.FindLeadPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.MyHomePage;
@@ -25,16 +26,23 @@ public class TC005_DeleteLead extends ProjectMethods{
 	@Test(dataProvider="fetchData")
 	public void createLeads(String uName,String pwd,String fName) {
 
-		new LoginPage()
-		.enterUserName(uName)
-		.enterPassword(pwd)
-		.clickLogIn()
-		.clickCrmButton()
-		.clickLeadsTab()
+		FindLeadPage flp= new LoginPage()
+				.enterUserName(uName)
+				.enterPassword(pwd)
+				.clickLogIn()
+				.clickCrmButton()
+				.clickLeadsTab()
+				.clickFindLead()
+				.typeSearchName(fName)
+				.clickSearch();
+
+		String firstLeadID = flp.getFirstLeadId();
+
+		flp.clickSearchresult()
+		.deleteLead()
 		.clickFindLead()
-		.typeSearchName(fName)
+		.typeSearchId(firstLeadID)
 		.clickSearch()
-		.clickSearchresult()
-		.deleteLead();
-}
+		.verifyNoResult();
+	}
 }

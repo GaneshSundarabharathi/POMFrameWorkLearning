@@ -20,6 +20,14 @@ public class FindLeadPage extends ProjectMethods{
 		type(eleFNameSearch,data);
 		return this;
 	}
+
+	@FindBy(how=How.XPATH,using="//input[@name='id']" )
+	private WebElement eleIdSearch;
+
+	public FindLeadPage typeSearchId(String data) {
+		type(eleIdSearch,data);
+		return this;
+	}
 	@FindBy(how=How.XPATH,using="//button[contains(text(),'Find Leads')]" )
 	private WebElement eleSearchButton;
 
@@ -32,7 +40,17 @@ public class FindLeadPage extends ProjectMethods{
 
 	public ViewLeadsPage clickSearchresult() {
 		click(eleSearchresult);
-		String leadid = eleSearchresult.getText();
 		return new ViewLeadsPage();
+	}
+	public String getFirstLeadId() {
+		String str = getText(eleSearchresult);
+		return str;
+	}
+	@FindBy(how=How.XPATH,using="(//div[@class='x-paging-info'])" )
+	private WebElement eleSearchNoResult;
+
+	public FindLeadPage verifyNoResult() {
+		verifyExactText(eleSearchNoResult, "No records to display");
+		return this;
 	}
 }

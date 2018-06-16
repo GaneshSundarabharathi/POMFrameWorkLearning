@@ -55,7 +55,7 @@ public class ViewLeadsPage extends ProjectMethods{
 		verifyPartialText(eleVerifyIndustry, data);
 		return this;		
 	}
-	@FindBy(how=How.LINK_TEXT,using="Delete")
+	@FindBy(how=How.XPATH,using="//a[@class='subMenuButtonDangerous']")
 	private WebElement eleDelete;
 
 	public MyLeadsPage deleteLead(){
