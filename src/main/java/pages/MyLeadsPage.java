@@ -30,4 +30,12 @@ public class MyLeadsPage extends ProjectMethods{
 		return new FindLeadPage();
 	}
 	
+	@FindBy(how=How.LINK_TEXT,using="Merge Leads" )
+	private WebElement eleMergeLead;
+	
+	public MergeLeadsPage clickMergeLead() {
+		click(eleMergeLead);
+		return new MergeLeadsPage();
+	}
+	
 }

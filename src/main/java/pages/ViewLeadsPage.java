@@ -62,4 +62,11 @@ public class ViewLeadsPage extends ProjectMethods{
 		click(eleDelete);
 		return new MyLeadsPage();		
 	}
+	@FindBy(how=How.LINK_TEXT,using="Find Leads" )
+	private WebElement eleFindLead;
+	
+	public FindLeadPage clickFindLead() {
+		click(eleFindLead);
+		return new FindLeadPage();
+	}
 	}
