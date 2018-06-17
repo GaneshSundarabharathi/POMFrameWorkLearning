@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="28952" started-at="2018-06-17T05:06:38Z" finished-at="2018-06-17T05:07:07Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="28952" started-at="2018-06-17T05:06:38Z" finished-at="2018-06-17T05:07:07Z">
+      <class name="testcases.TC006_MergeLead">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC006_MergeLead@15d3402]" name="beforeSuite" is-config="true" duration-ms="803" started-at="2018-06-17T05:06:37Z" finished-at="2018-06-17T05:06:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC006_MergeLead@15d3402]" name="setData" is-config="true" duration-ms="0" started-at="2018-06-17T05:06:38Z" finished-at="2018-06-17T05:06:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TC006_MergeLead@15d3402]" name="beforeClass" is-config="true" duration-ms="2" started-at="2018-06-17T05:06:38Z" finished-at="2018-06-17T05:06:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC006_MergeLead@15d3402]" name="beforeMethod" is-config="true" duration-ms="6884" started-at="2018-06-17T05:06:38Z" finished-at="2018-06-17T05:06:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="createLeads(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC006_MergeLead@15d3402]" name="createLeads" duration-ms="20521" started-at="2018-06-17T05:06:45Z" data-provider="fetchData" finished-at="2018-06-17T05:07:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ganesh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[subash]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeads -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC006_MergeLead@15d3402]" name="afterMethod" is-config="true" duration-ms="788" started-at="2018-06-17T05:07:06Z" finished-at="2018-06-17T05:07:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC006_MergeLead@15d3402]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-06-17T05:07:07Z" finished-at="2018-06-17T05:07:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC006_MergeLead@15d3402]" name="afterSuite" is-config="true" duration-ms="511" started-at="2018-06-17T05:07:07Z" finished-at="2018-06-17T05:07:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testcases.TC006_MergeLead -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
